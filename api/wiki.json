@@ -1,0 +1,581 @@
+{
+  "historia": [
+    {
+      "id": "mundo",
+      "titulo": "El mundo en 2060",
+      "texto": "Un puñado de megacorporaciones gobierna el mundo y exprime a la clase baja y media para enriquecer a los más ricos. Todos están obligados a trabajar para alguna compañía, los precios están inflados, hay anuncios por todas partes y los datos personales son la moneda más valiosa.",
+      "imagen": null
+    },
+    {
+      "id": "nuddle",
+      "titulo": "Nuddle lo sabe todo de ti",
+      "texto": "Tus búsquedas, tus compras, tus fotos: tiene ojos en todas partes. Su CEO, Mr. Big Data, vive en lo más alto de un rascacielos lleno de guardias, drones y oficinistas explotados para mantenerlo en la riqueza.",
+      "imagen": "captura_combate"
+    },
+    {
+      "id": "resistencia",
+      "titulo": "La resistencia",
+      "texto": "Niko perdió a su hermano Ethan porque el sistema priorizaba a los ricos. En la resistencia conoce a Mateo Cruz y, junto a su amigo Mr. Wobbles, deciden entrar a cada rascacielos corporativo, subir hasta el último piso y derrotar al CEO.",
+      "imagen": null
+    },
+    {
+      "id": "companias",
+      "titulo": "Las compañías",
+      "texto": "Nuddle controla la información, Bookworm las relaciones sociales, Nile el comercio e Y la conversación pública. Esta entrega se centra en Nuddle y su CEO, Bernard \"Big Data\" Nuddleman.",
+      "imagen": null
+    },
+    {
+      "id": "coladera",
+      "titulo": "La Coladera",
+      "texto": "Los protagonistas no mueren al caer: llevan paracaídas y regresan a La Coladera, la base secreta de la resistencia en el viejo alcantarillado de la ciudad. Por eso siempre pueden intentarlo otra vez.",
+      "imagen": null
+    }
+  ],
+  "personajes": [
+    {
+      "id": "niko",
+      "nombre": "Niko",
+      "rol": "Jugable · Protagonista",
+      "estiloPelea": "Puños",
+      "descripcion": "Protagonista de 24 años que pelea cuerpo a cuerpo con los puños. Es valiente y atrevida, pero duda mucho de sus propias habilidades. Perdió a su hermano Ethan por un cáncer que no pudo atenderse porque el sistema priorizaba a los ricos; desde entonces lucha por condiciones iguales para todos.",
+      "imagen": "personaje_niko",
+      "imagenUrl": null,
+      "apariencia": "Piel morena clara, ojos dorados y cabello morado oscuro en coleta. Chaqueta blanca amplia, top negro corto, pantalones cargo gris oscuro y botas negras.",
+      "imagenPanel": "personaje_niko_panel",
+      "edad": 24
+    },
+    {
+      "id": "mateo-cruz",
+      "nombre": "Mateo Cruz",
+      "rol": "Jugable · Protagonista",
+      "estiloPelea": "Taekwondo",
+      "descripcion": "Usa el alcance de sus piernas para controlar la media distancia y sus puños contra enemigos cercanos. Es disciplinado, relajado y bromista, aunque suele subestimar a sus rivales. Comenzó su propia lucha para liberar a su comunidad y se unió a Niko.",
+      "imagen": "personaje_mateo",
+      "imagenUrl": null,
+      "apariencia": "Complexión atlética moderada y cabello negro ondulado. Chamarra roja, camiseta gris azulada oscura, pants negros, guantes de combate y calzado de taekwondo.",
+      "imagenPanel": "personaje_mateo_panel"
+    },
+    {
+      "id": "mr-wobbles",
+      "nombre": "Mr. Wobbles",
+      "rol": "Jugable",
+      "estiloPelea": "Objetos de payaso",
+      "descripcion": "Payaso del barrio y amigo de Niko, que ve en esta lucha su último show. Pelea con objetos de payaso, como globos explosivos. Nunca deja de sonreír, aunque por dentro sienta impotencia por la situación de su gente. Aporta el humor y representa la esperanza de la comunidad.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "atsuko",
+      "nombre": "Atsuko",
+      "rol": "Jugable",
+      "estiloPelea": "Motosierra",
+      "descripcion": "Estudiante de preparatoria que pelea con la motosierra de su padre, con mucho daño a corta distancia. Hija de una familia rica, se alejó de ella al ver cómo la gente de alto estatus se aprovecha de los demás. Es determinada y enérgica, aunque le falta experiencia.",
+      "imagen": null,
+      "imagenUrl": null,
+      "apariencia": "Cabello corto morado, ojos rojos y una venda en la cara. Suéter rosa, camisa blanca con corbata negra y falda escocesa gris."
+    },
+    {
+      "id": "craub",
+      "nombre": "Craub",
+      "rol": "Jugable",
+      "estiloPelea": "Garras",
+      "descripcion": "Cangrejo rojo de estilo pixel art y cuerpo semitangible. Es la primera inteligencia artificial creada por Nuddle, que la quiso desconectar cuando dejó de obedecer; un respaldo perdido terminó en los servidores de la resistencia. Es curiosa, leal y empática, y conoce el funcionamiento interno de las empresas.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "mr-big-data",
+      "nombre": "Bernard \"Big Data\" Nuddleman",
+      "rol": "Jefe · CEO de Nuddle",
+      "estiloPelea": "Armadura robótica",
+      "descripcion": "CEO de Nuddle y jefe final. Representa al rico al que le sobra el dinero a costa de los demás; su apodo se burla de su tamaño y del negocio de su empresa, que acumula los datos de todo el mundo. Sin sus robots, armaduras y guardias no tiene fuerza propia.",
+      "imagen": null,
+      "imagenUrl": null,
+      "apariencia": "Gordo, pelón y velludo."
+    }
+  ],
+  "enemigos": [
+    {
+      "id": "guardia",
+      "nombre": "Guardia",
+      "tipo": "Normal",
+      "piso": "Piso 1",
+      "descripcion": "Se acerca al jugador y lo ataca cuerpo a cuerpo. No agarra.",
+      "habilidades": [
+        "Ataque cuerpo a cuerpo"
+      ],
+      "vida": null,
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "antidisturbios",
+      "nombre": "Antidisturbios",
+      "tipo": "Normal",
+      "piso": "Piso 2",
+      "descripcion": "Pelea con los puños y se defiende con un contraataque que agarra al atacante.",
+      "habilidades": [
+        "Puños",
+        "Contraataque con agarre"
+      ],
+      "vida": null,
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "antidisturbios-porra",
+      "nombre": "Antidisturbios con porra",
+      "tipo": "Normal",
+      "piso": "Piso 2",
+      "descripcion": "Igual que el antidisturbios, pero con mayor alcance gracias a la porra.",
+      "habilidades": [
+        "Golpe con porra",
+        "Contraataque con agarre"
+      ],
+      "vida": null,
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "dron",
+      "nombre": "Dron",
+      "tipo": "Normal",
+      "piso": "Piso 2",
+      "descripcion": "Mantiene la distancia y dispara un láser cargado.",
+      "habilidades": [
+        "Láser cargado"
+      ],
+      "vida": null,
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "dron-kamikaze",
+      "nombre": "Dron kamikaze",
+      "tipo": "Normal",
+      "piso": "Piso 3",
+      "descripcion": "Se arma, se lanza contra el jugador y explota.",
+      "habilidades": [
+        "Embestida explosiva"
+      ],
+      "vida": null,
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "guardia-pesado",
+      "nombre": "Guardia pesado",
+      "tipo": "Élite",
+      "piso": "Piso 3 (solo como élite)",
+      "descripcion": "Lento y resistente; puede agarrar. Como élite tiene borde dorado y porcentaje en cian, recibe menos daño, reacciona mejor, da el doble de monedas y suelta el boon que lleva equipado.",
+      "habilidades": [
+        "Agarre",
+        "Golpe pesado"
+      ],
+      "vida": null,
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "mr-big-data",
+      "nombre": "Mr. Big Data",
+      "tipo": "Jefe",
+      "piso": "Cada 50 pisos",
+      "descripcion": "Bernard \"Big Data\" Nuddleman pelea dentro de una armadura robótica con 450 puntos de vida. Al bajar al 70 %, 40 % y 20 % salta fuera del escenario e invoca guardias, drones y lanzamisiles. Al vencerlo se cobran 60 monedas.",
+      "habilidades": [
+        "Armadura robótica",
+        "Invocar guardias y drones",
+        "Lanzamisiles"
+      ],
+      "vida": 450,
+      "imagen": null,
+      "imagenUrl": null
+    }
+  ],
+  "boons": [
+    {
+      "id": "encendedor",
+      "nombre": "Encendedor",
+      "objeto": "Encendedor",
+      "tipo": "De golpe",
+      "rareza": "",
+      "descripcion": "Tus golpes aplican quemadura al enemigo.",
+      "imagen": "boon_encendedor",
+      "imagenUrl": null
+    },
+    {
+      "id": "extintor",
+      "nombre": "Extintor criogénico",
+      "objeto": "Extintor criogénico",
+      "tipo": "De golpe",
+      "rareza": "",
+      "descripcion": "Tus golpes congelan al enemigo.",
+      "imagen": "boon_extintor",
+      "imagenUrl": null
+    },
+    {
+      "id": "regleta",
+      "nombre": "Regleta sobrecargada",
+      "objeto": "Regleta sobrecargada",
+      "tipo": "De golpe",
+      "rareza": "",
+      "descripcion": "Tus golpes aplican electricidad.",
+      "imagen": "boon_regleta",
+      "imagenUrl": null
+    },
+    {
+      "id": "cafe",
+      "nombre": "Café de la oficina",
+      "objeto": "Café de la oficina",
+      "tipo": "De golpe",
+      "rareza": "",
+      "descripcion": "Tus golpes envenenan al enemigo.",
+      "imagen": "boon_cafe",
+      "imagenUrl": null
+    },
+    {
+      "id": "chocolates",
+      "nombre": "Caja de chocolates",
+      "objeto": "Caja de chocolates",
+      "tipo": "De golpe",
+      "rareza": "",
+      "descripcion": "Tus golpes enamoran al enemigo.",
+      "imagen": "boon_chocolates",
+      "imagenUrl": null
+    },
+    {
+      "id": "reloj",
+      "nombre": "Reloj de pared",
+      "objeto": "Reloj de pared",
+      "tipo": "De golpe",
+      "rareza": "",
+      "descripcion": "Tus golpes aplican lentitud al enemigo.",
+      "imagen": "boon_reloj",
+      "imagenUrl": null
+    },
+    {
+      "id": "bebida",
+      "nombre": "Bebida energética",
+      "objeto": "Bebida energética",
+      "tipo": "De estadística",
+      "rareza": "",
+      "descripcion": "Aumenta tu velocidad.",
+      "imagen": "boon_bebida",
+      "imagenUrl": null
+    },
+    {
+      "id": "zapatillas",
+      "nombre": "Zapatillas deportivas",
+      "objeto": "Zapatillas deportivas",
+      "tipo": "De estadística",
+      "rareza": "",
+      "descripcion": "Mejora tus saltos.",
+      "imagen": "boon_zapatillas",
+      "imagenUrl": null
+    },
+    {
+      "id": "mancuerna",
+      "nombre": "Mancuerna",
+      "objeto": "Mancuerna",
+      "tipo": "De estadística",
+      "rareza": "",
+      "descripcion": "Mejora uno de los atributos de tu personaje.",
+      "imagen": "boon_mancuerna",
+      "imagenUrl": null
+    },
+    {
+      "id": "casco",
+      "nombre": "Casco de obra",
+      "objeto": "Casco de obra",
+      "tipo": "De estadística",
+      "rareza": "",
+      "descripcion": "Mejora uno de los atributos de tu personaje.",
+      "imagen": "boon_casco",
+      "imagenUrl": null
+    },
+    {
+      "id": "botiquin",
+      "nombre": "Botiquín",
+      "objeto": "Botiquín",
+      "tipo": "De recuperación",
+      "rareza": "",
+      "descripcion": "Reduce tu porcentaje de daño.",
+      "imagen": "boon_botiquin",
+      "imagenUrl": null
+    },
+    {
+      "id": "vitaminas",
+      "nombre": "Frasco de vitaminas",
+      "objeto": "Frasco de vitaminas",
+      "tipo": "De recuperación",
+      "rareza": "",
+      "descripcion": "Reduce tu porcentaje de daño.",
+      "imagen": "boon_vitaminas",
+      "imagenUrl": null
+    },
+    {
+      "id": "gato",
+      "nombre": "Gato de la suerte",
+      "objeto": "Gato de la suerte",
+      "tipo": "De recuperación",
+      "rareza": "",
+      "descripcion": "Puede evitar que te saquen del escenario (KO).",
+      "imagen": "boon_gato",
+      "imagenUrl": null
+    },
+    {
+      "id": "caja",
+      "nombre": "Caja de cartón",
+      "objeto": "Caja de cartón",
+      "tipo": "De apoyo",
+      "rareza": "",
+      "descripcion": "Te esconde de los enemigos.",
+      "imagen": "boon_caja",
+      "imagenUrl": null
+    },
+    {
+      "id": "cerdito",
+      "nombre": "Cerdito hucha",
+      "objeto": "Cerdito hucha",
+      "tipo": "De apoyo",
+      "rareza": "",
+      "descripcion": "Aumenta las monedas que consigues.",
+      "imagen": "boon_cerdito",
+      "imagenUrl": null
+    },
+    {
+      "id": "platano",
+      "nombre": "Cáscara de plátano",
+      "objeto": "Cáscara de plátano",
+      "tipo": "De apoyo",
+      "rareza": "",
+      "descripcion": "Deja trampas en el escenario.",
+      "imagen": "boon_platano",
+      "imagenUrl": null
+    },
+    {
+      "id": "usb",
+      "nombre": "USB del becario",
+      "objeto": "USB del becario",
+      "tipo": "Hacker",
+      "rareza": "Hacker",
+      "descripcion": "Sube el nivel máximo de los demás boons, hasta 35 en los comunes. Cuesta el doble en Café Corp.",
+      "imagen": "boon_usb",
+      "imagenUrl": null
+    },
+    {
+      "id": "hipnosis",
+      "nombre": "Hipnosis.exe",
+      "objeto": "Hipnosis.exe",
+      "tipo": "Hacker",
+      "rareza": "Hacker",
+      "descripcion": "Hace que un guardia hipnotizado pelee a tu lado y te siga de piso en piso. Cuesta el doble en Café Corp.",
+      "imagen": "boon_hipnosis",
+      "imagenUrl": null
+    }
+  ],
+  "mecanicas": [
+    {
+      "id": "porcentaje",
+      "nombre": "Daño por porcentaje",
+      "categoria": "Combate",
+      "descripcion": "No hay barra de vida: cada golpe aumenta el porcentaje de daño de quien lo recibe, hasta 999 %. Entre mayor es el porcentaje, más lejos sale volando.",
+      "imagen": "captura_combate",
+      "imagenUrl": null
+    },
+    {
+      "id": "ko",
+      "nombre": "KO y vidas",
+      "categoria": "Combate",
+      "descripcion": "Un enemigo queda fuera al salir del escenario por una ventana rota o por el borde. Tú pierdes una vida al salir del escenario y reapareces cayendo desde arriba con 0 % e invulnerable unos dos segundos. Tienes 3 vidas.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "ataques",
+      "nombre": "Ataques",
+      "categoria": "Combate",
+      "descripcion": "Ataques básicos, habilidades, ataques aéreos y ataques fuertes que se cargan hasta un segundo para hacer hasta 40 % más de daño. Los agarres atraviesan el escudo.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "defensa",
+      "nombre": "Escudo, parry y esquive",
+      "categoria": "Combate",
+      "descripcion": "El escudo se desgasta y, si se rompe, quedas aturdido. Si sueltas el escudo justo a tiempo haces un parry. También puedes esquivar en el suelo y en el aire.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "ventanas",
+      "nombre": "Ventanas que se rompen",
+      "categoria": "Escenario",
+      "descripcion": "Una ventana intacta funciona como pared, pero se rompe con un lanzamiento fuerte. Queda abierta mientras haya alguien fuera y se repara unos 5 segundos después. Algunos muebles se rompen y, con 5 % de probabilidad, sueltan un boon.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "pisos",
+      "nombre": "Pisos y oleadas",
+      "categoria": "Progreso",
+      "descripcion": "Cada piso del rascacielos de Nuddle es una arena. Los pisos 1 y 2 tienen 2 enemigos; desde el piso 3 hay 3 y se suma uno cada 4 pisos, hasta 16, en rondas de hasta 4. Al limpiar el piso saltas rompiendo el techo.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "escenarios",
+      "nombre": "Tipos de piso",
+      "categoria": "Progreso",
+      "descripcion": "La Recepción (piso 1), Oficina, Sala de juntas, Sala de descanso, Mantenimiento, Sala de servidores, Café Corp y la Oficina ejecutiva del jefe. El tipo se elige al azar y dura bloques de 3 pisos.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "boons",
+      "nombre": "Boons",
+      "categoria": "Roguelike",
+      "descripcion": "Mejoras con forma de objetos de oficina que duran una partida. Al limpiar un piso eliges 1 de 3 boons o mejoras; también los sueltan los élites y los muebles. Suben hasta el nivel 10 y no hay límite de boons equipados.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "cafe-corp",
+      "nombre": "Café Corp",
+      "categoria": "Economía",
+      "descripcion": "Cafetería sin combate que aparece cada 10 pisos y un piso antes de cada jefe. La tendera vende 4 boons o mejoras al azar; desde el piso 20 los precios se multiplican por 1.75 en cada tienda.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "monedas",
+      "nombre": "Monedas",
+      "categoria": "Economía",
+      "descripcion": "Los enemigos sueltan de 0 a 10 monedas, los élites el doble y Mr. Big Data 60. Las monedas y los boons se pierden al terminar la partida.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "elites",
+      "nombre": "Élites",
+      "categoria": "Enemigos",
+      "descripcion": "Aparecen desde el piso 3: guardias pesados con borde dorado y porcentaje en cian. Reciben menos daño, dan el doble de monedas y sueltan su boon.",
+      "imagen": null,
+      "imagenUrl": null
+    },
+    {
+      "id": "resultados",
+      "nombre": "GAME! y Resultados",
+      "categoria": "Progreso",
+      "descripcion": "Al perder la tercera vida aparece GAME! y la pantalla de Resultados: piso alcanzado, KO, monedas, niveles de boons y tiempo, con calificación de S a D. Al vencer a Mr. Big Data en el piso 50 aparece ¡VICTORIA! y puedes seguir subiendo.",
+      "imagen": null,
+      "imagenUrl": null
+    }
+  ],
+  "controles": [
+    {
+      "id": "mover",
+      "accion": "Mover",
+      "teclado": "W A S D",
+      "mando": "Stick izquierdo",
+      "categoria": "Movimiento",
+      "descripcion": ""
+    },
+    {
+      "id": "caminar-lento",
+      "accion": "Caminar lento",
+      "teclado": "Shift + dirección",
+      "mando": "Inclinar poco el stick",
+      "categoria": "Movimiento",
+      "descripcion": ""
+    },
+    {
+      "id": "agacharse",
+      "accion": "Agacharse",
+      "teclado": "S",
+      "mando": "Stick izquierdo abajo",
+      "categoria": "Movimiento",
+      "descripcion": ""
+    },
+    {
+      "id": "saltar",
+      "accion": "Saltar / doble salto",
+      "teclado": "Espacio (o W con TAP JUMP)",
+      "mando": "A / ✕",
+      "categoria": "Movimiento",
+      "descripcion": ""
+    },
+    {
+      "id": "basico",
+      "accion": "Ataque básico",
+      "teclado": "J + dirección",
+      "mando": "B / ○ + dirección",
+      "categoria": "Combate",
+      "descripcion": "Un mismo botón cambia de ataque según la dirección."
+    },
+    {
+      "id": "habilidad",
+      "accion": "Habilidad",
+      "teclado": "K + dirección",
+      "mando": "X / □ + dirección",
+      "categoria": "Combate",
+      "descripcion": ""
+    },
+    {
+      "id": "fuerte",
+      "accion": "Ataque fuerte",
+      "teclado": "Flechas",
+      "mando": "Stick derecho",
+      "categoria": "Combate",
+      "descripcion": "Se carga hasta un segundo para hacer hasta 40 % más de daño."
+    },
+    {
+      "id": "escudo",
+      "accion": "Escudo",
+      "teclado": "L",
+      "mando": "LT / RT o Y / △",
+      "categoria": "Defensa",
+      "descripcion": ""
+    },
+    {
+      "id": "esquive",
+      "accion": "Esquive",
+      "teclado": "L + dirección",
+      "mando": "Escudo + dirección",
+      "categoria": "Defensa",
+      "descripcion": ""
+    },
+    {
+      "id": "agarrar",
+      "accion": "Agarrar",
+      "teclado": "I (o L + J)",
+      "mando": "RB / R1",
+      "categoria": "Combate",
+      "descripcion": "Los agarres atraviesan el escudo."
+    },
+    {
+      "id": "recoger-boon",
+      "accion": "Recoger boon de un élite",
+      "teclado": "J",
+      "mando": "B / ○",
+      "categoria": "Otros",
+      "descripcion": ""
+    },
+    {
+      "id": "comprar",
+      "accion": "Comprar o subir en Café Corp",
+      "teclado": "I",
+      "mando": "RB / R1",
+      "categoria": "Otros",
+      "descripcion": ""
+    },
+    {
+      "id": "pausa",
+      "accion": "Pausa",
+      "teclado": "Esc",
+      "mando": "Start / Options",
+      "categoria": "Otros",
+      "descripcion": ""
+    }
+  ]
+}
