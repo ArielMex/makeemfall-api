@@ -42,7 +42,9 @@
       "imagenUrl": null,
       "apariencia": "Piel morena clara, ojos dorados y cabello morado oscuro en coleta. Chaqueta blanca amplia, top negro corto, pantalones cargo gris oscuro y botas negras.",
       "imagenPanel": "personaje_niko_panel",
-      "edad": 24
+      "edad": 24,
+      "peso": 94,
+      "velocidad": 1.92
     },
     {
       "id": "mateo-cruz",
@@ -53,7 +55,9 @@
       "imagen": "personaje_mateo",
       "imagenUrl": null,
       "apariencia": "Complexión atlética moderada y cabello negro ondulado. Chamarra roja, camiseta gris azulada oscura, pants negros, guantes de combate y calzado de taekwondo.",
-      "imagenPanel": "personaje_mateo_panel"
+      "imagenPanel": "personaje_mateo_panel",
+      "peso": 108,
+      "velocidad": 1.72
     },
     {
       "id": "mr-wobbles",
@@ -61,8 +65,11 @@
       "rol": "Jugable",
       "estiloPelea": "Objetos de payaso",
       "descripcion": "Payaso del barrio y amigo de Niko, que ve en esta lucha su último show. Pelea con objetos de payaso, como globos explosivos. Nunca deja de sonreír, aunque por dentro sienta impotencia por la situación de su gente. Aporta el humor y representa la esperanza de la comunidad.",
-      "imagen": null,
-      "imagenUrl": null
+      "imagen": "personaje_wobbles",
+      "imagenUrl": null,
+      "peso": 98,
+      "velocidad": 1.76,
+      "imagenPanel": "personaje_wobbles_render"
     },
     {
       "id": "atsuko",
@@ -70,9 +77,12 @@
       "rol": "Jugable",
       "estiloPelea": "Motosierra",
       "descripcion": "Estudiante de preparatoria que pelea con la motosierra de su padre, con mucho daño a corta distancia. Hija de una familia rica, se alejó de ella al ver cómo la gente de alto estatus se aprovecha de los demás. Es determinada y enérgica, aunque le falta experiencia.",
-      "imagen": null,
+      "imagen": "personaje_atsuko",
       "imagenUrl": null,
-      "apariencia": "Cabello corto morado, ojos rojos y una venda en la cara. Suéter rosa, camisa blanca con corbata negra y falda escocesa gris."
+      "apariencia": "Cabello corto morado, ojos rojos y una venda en la cara. Suéter rosa, camisa blanca con corbata negra y falda escocesa gris.",
+      "peso": 100,
+      "velocidad": 2.17,
+      "imagenPanel": "personaje_atsuko_render"
     },
     {
       "id": "craub",
@@ -80,8 +90,11 @@
       "rol": "Jugable",
       "estiloPelea": "Garras",
       "descripcion": "Cangrejo rojo de estilo pixel art y cuerpo semitangible. Es la primera inteligencia artificial creada por Nuddle, que la quiso desconectar cuando dejó de obedecer; un respaldo perdido terminó en los servidores de la resistencia. Es curiosa, leal y empática, y conoce el funcionamiento interno de las empresas.",
-      "imagen": null,
-      "imagenUrl": null
+      "imagen": "personaje_craub",
+      "imagenUrl": null,
+      "peso": 75,
+      "velocidad": 1.68,
+      "imagenPanel": "personaje_craub_render"
     },
     {
       "id": "mr-big-data",
@@ -91,7 +104,11 @@
       "descripcion": "CEO de Nuddle y jefe final. Representa al rico al que le sobra el dinero a costa de los demás; su apodo se burla de su tamaño y del negocio de su empresa, que acumula los datos de todo el mundo. Sin sus robots, armaduras y guardias no tiene fuerza propia.",
       "imagen": null,
       "imagenUrl": null,
-      "apariencia": "Gordo, pelón y velludo."
+      "apariencia": "Gordo, pelón y velludo.",
+      "peso": 400,
+      "velocidad": 1.5,
+      "imagenPanel": null,
+      "vida": 450
     }
   ],
   "enemigos": [
@@ -198,8 +215,10 @@
       "nombre": "Encendedor",
       "objeto": "Encendedor",
       "tipo": "De golpe",
-      "rareza": "",
-      "descripcion": "Tus golpes aplican quemadura al enemigo.",
+      "elemento": "Fuego",
+      "rareza": "Común",
+      "descripcion": "Tus golpes queman: +1.5 % de daño por segundo durante 3.25 s.",
+      "nivelMaximo": "+2.5 % por segundo durante 3.75 s.",
       "imagen": "boon_encendedor",
       "imagenUrl": null
     },
@@ -208,8 +227,10 @@
       "nombre": "Extintor criogénico",
       "objeto": "Extintor criogénico",
       "tipo": "De golpe",
-      "rareza": "",
-      "descripcion": "Tus golpes congelan al enemigo.",
+      "elemento": "Hielo",
+      "rareza": "Raro",
+      "descripcion": "Tus ataques normales tienen 15 % de probabilidad de congelar al enemigo 0.95 s. El siguiente golpe rompe el hielo con +50 % de knockback.",
+      "nivelMaximo": "25 % de probabilidad de congelar 1.25 s.",
       "imagen": "boon_extintor",
       "imagenUrl": null
     },
@@ -218,8 +239,10 @@
       "nombre": "Regleta sobrecargada",
       "objeto": "Regleta sobrecargada",
       "tipo": "De golpe",
-      "rareza": "",
-      "descripcion": "Tus golpes aplican electricidad.",
+      "elemento": "Electricidad",
+      "rareza": "Raro",
+      "descripcion": "Tus ataques especiales sueltan un rayo que salta a 1 enemigo cercano y le hace 4 %.",
+      "nivelMaximo": "El rayo salta a 2 enemigos y hace 6 %.",
       "imagen": "boon_regleta",
       "imagenUrl": null
     },
@@ -228,8 +251,10 @@
       "nombre": "Café de la oficina",
       "objeto": "Café de la oficina",
       "tipo": "De golpe",
-      "rareza": "",
-      "descripcion": "Tus golpes envenenan al enemigo.",
+      "elemento": "Veneno",
+      "rareza": "Épico",
+      "descripcion": "Tus golpes envenenan 4.5 s: el enemigo hace 25 % menos daño y contagia el veneno a quien toque.",
+      "nivelMaximo": "Envenena 5.5 s y el enemigo hace 35 % menos daño.",
       "imagen": "boon_cafe",
       "imagenUrl": null
     },
@@ -238,8 +263,10 @@
       "nombre": "Caja de chocolates",
       "objeto": "Caja de chocolates",
       "tipo": "De golpe",
-      "rareza": "",
-      "descripcion": "Tus golpes enamoran al enemigo.",
+      "elemento": "Amor",
+      "rareza": "Legendario",
+      "descripcion": "8 % de probabilidad de enamorar al enemigo que golpeas: lucha a tu lado durante 5 s. No funciona con el jefe y es la mitad de probable contra élites.",
+      "nivelMaximo": "12 % de probabilidad, lucha a tu lado 7 s.",
       "imagen": "boon_chocolates",
       "imagenUrl": null
     },
@@ -248,8 +275,10 @@
       "nombre": "Reloj de pared",
       "objeto": "Reloj de pared",
       "tipo": "De golpe",
-      "rareza": "",
-      "descripcion": "Tus golpes aplican lentitud al enemigo.",
+      "elemento": "Lentitud",
+      "rareza": "Épico",
+      "descripcion": "Cada KO ralentiza al resto de los enemigos al 55 % de su velocidad durante 3 s.",
+      "nivelMaximo": "Los ralentiza al 45 % durante 4 s.",
       "imagen": "boon_reloj",
       "imagenUrl": null
     },
@@ -258,8 +287,10 @@
       "nombre": "Bebida energética",
       "objeto": "Bebida energética",
       "tipo": "De estadística",
-      "rareza": "",
-      "descripcion": "Aumenta tu velocidad.",
+      "elemento": "Velocidad",
+      "rareza": "Común",
+      "descripcion": "Te mueves y atacas un 8 % más rápido.",
+      "nivelMaximo": "16 % más rápido.",
       "imagen": "boon_bebida",
       "imagenUrl": null
     },
@@ -268,8 +299,10 @@
       "nombre": "Zapatillas deportivas",
       "objeto": "Zapatillas deportivas",
       "tipo": "De estadística",
-      "rareza": "",
-      "descripcion": "Mejora tus saltos.",
+      "elemento": "Salto",
+      "rareza": "Común",
+      "descripcion": "+1 salto en el aire.",
+      "nivelMaximo": "+2 saltos en el aire y saltos aéreos 12 % más altos.",
       "imagen": "boon_zapatillas",
       "imagenUrl": null
     },
@@ -278,8 +311,10 @@
       "nombre": "Mancuerna",
       "objeto": "Mancuerna",
       "tipo": "De estadística",
-      "rareza": "",
-      "descripcion": "Mejora uno de los atributos de tu personaje.",
+      "elemento": "Fuerza",
+      "rareza": "Raro",
+      "descripcion": "Tus golpes lanzan a los enemigos un 8 % más lejos.",
+      "nivelMaximo": "18 % más lejos.",
       "imagen": "boon_mancuerna",
       "imagenUrl": null
     },
@@ -288,8 +323,10 @@
       "nombre": "Casco de obra",
       "objeto": "Casco de obra",
       "tipo": "De estadística",
-      "rareza": "",
-      "descripcion": "Mejora uno de los atributos de tu personaje.",
+      "elemento": "Aguante",
+      "rareza": "Raro",
+      "descripcion": "Recibes un 8 % menos de knockback.",
+      "nivelMaximo": "16 % menos de knockback.",
       "imagen": "boon_casco",
       "imagenUrl": null
     },
@@ -298,8 +335,10 @@
       "nombre": "Botiquín",
       "objeto": "Botiquín",
       "tipo": "De recuperación",
-      "rareza": "",
-      "descripcion": "Reduce tu porcentaje de daño.",
+      "elemento": "Curación",
+      "rareza": "Común",
+      "descripcion": "Al limpiar una sala te curas 28 % de daño.",
+      "nivelMaximo": "Te curas 44 % al limpiar una sala.",
       "imagen": "boon_botiquin",
       "imagenUrl": null
     },
@@ -308,8 +347,10 @@
       "nombre": "Frasco de vitaminas",
       "objeto": "Frasco de vitaminas",
       "tipo": "De recuperación",
-      "rareza": "",
-      "descripcion": "Reduce tu porcentaje de daño.",
+      "elemento": "Regeneración",
+      "rareza": "Raro",
+      "descripcion": "Si no te golpean durante 3 s, te curas 0.6 % por segundo.",
+      "nivelMaximo": "Te curas 1.2 % por segundo.",
       "imagen": "boon_vitaminas",
       "imagenUrl": null
     },
@@ -318,8 +359,10 @@
       "nombre": "Gato de la suerte",
       "objeto": "Gato de la suerte",
       "tipo": "De recuperación",
-      "rareza": "",
-      "descripcion": "Puede evitar que te saquen del escenario (KO).",
+      "elemento": "Suerte",
+      "rareza": "Legendario",
+      "descripcion": "Te salva de 1 KO por sala y te cura el 40 % del daño.",
+      "nivelMaximo": "Te salva de 2 KO por sala y te cura el 60 %.",
       "imagen": "boon_gato",
       "imagenUrl": null
     },
@@ -328,8 +371,10 @@
       "nombre": "Caja de cartón",
       "objeto": "Caja de cartón",
       "tipo": "De apoyo",
-      "rareza": "",
-      "descripcion": "Te esconde de los enemigos.",
+      "elemento": "Sigilo",
+      "rareza": "Legendario",
+      "descripcion": "Agáchate 1 s para esconderte en la caja: los enemigos no te ven durante 2.5 s (recarga de 6 s).",
+      "nivelMaximo": "Te escondes durante 3.5 s.",
       "imagen": "boon_caja",
       "imagenUrl": null
     },
@@ -338,8 +383,10 @@
       "nombre": "Cerdito hucha",
       "objeto": "Cerdito hucha",
       "tipo": "De apoyo",
-      "rareza": "",
-      "descripcion": "Aumenta las monedas que consigues.",
+      "elemento": "Codicia",
+      "rareza": "Común",
+      "descripcion": "Cada KO suelta un 30 % más de monedas y nunca 0.",
+      "nivelMaximo": "70 % más de monedas.",
       "imagen": "boon_cerdito",
       "imagenUrl": null
     },
@@ -348,29 +395,11 @@
       "nombre": "Cáscara de plátano",
       "objeto": "Cáscara de plátano",
       "tipo": "De apoyo",
-      "rareza": "",
-      "descripcion": "Deja trampas en el escenario.",
+      "elemento": "Trampa",
+      "rareza": "Épico",
+      "descripcion": "Al esquivar dejas una cáscara (1 a la vez): quien la pisa resbala, cae y recibe 4 %.",
+      "nivelMaximo": "2 cáscaras a la vez y 6 % de daño.",
       "imagen": "boon_platano",
-      "imagenUrl": null
-    },
-    {
-      "id": "usb",
-      "nombre": "USB del becario",
-      "objeto": "USB del becario",
-      "tipo": "Hacker",
-      "rareza": "Hacker",
-      "descripcion": "Sube el nivel máximo de los demás boons, hasta 35 en los comunes. Cuesta el doble en Café Corp.",
-      "imagen": "boon_usb",
-      "imagenUrl": null
-    },
-    {
-      "id": "hipnosis",
-      "nombre": "Hipnosis.exe",
-      "objeto": "Hipnosis.exe",
-      "tipo": "Hacker",
-      "rareza": "Hacker",
-      "descripcion": "Hace que un guardia hipnotizado pelee a tu lado y te siga de piso en piso. Cuesta el doble en Café Corp.",
-      "imagen": "boon_hipnosis",
       "imagenUrl": null
     }
   ],
@@ -435,7 +464,7 @@
       "id": "boons",
       "nombre": "Boons",
       "categoria": "Roguelike",
-      "descripcion": "Mejoras con forma de objetos de oficina que duran una partida. Al limpiar un piso eliges 1 de 3 boons o mejoras; también los sueltan los élites y los muebles. Suben hasta el nivel 10 y no hay límite de boons equipados.",
+      "descripcion": "Mejoras con forma de objetos de oficina que duran una partida. Al limpiar un piso eliges 1 de 3 boons o mejoras; también los sueltan los élites y los muebles. Hay 16 boons en 4 rarezas (común, raro, épico y legendario), suben hasta el nivel 5 y no hay límite de boons equipados. Entre más boons tienes, menos probable es que te ofrezcan uno nuevo (0.75 elevado al número que ya tienes).",
       "imagen": null,
       "imagenUrl": null
     },
